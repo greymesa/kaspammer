@@ -1,0 +1,29 @@
+{
+  "name": "kaspammer-bot",
+  "version": "1.0.0",
+  "description": "A simple kahoot flooder",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "kahoot.js-updated": "^1.2.14",
+    "seedrandom": "^3.0.5"
+  },
+  "engines": {
+    "node": "12.x"
+  },
+  "repository": {
+    "url": "https://glitch.com/edit/#!/kaspammer"
+  },
+  "license": "CC BY-NC-SA 4.0",
+  "keywords": [
+    "node",
+    "glitch",
+    "express",
+    "kahoot",
+    "kahoot.js"
+    
+  ]
+}
