@@ -10,7 +10,7 @@ Use the above link to use the website yourself without editing anything
 
 Clone The repo then edit it with your git editor (I prefer github desktop and vs code)
 
-Edit `"get stickbugged lol "` on line 119 of server.js to change the name of the bot, make sure to add a space at the end so the bot number wont be part of your text
+Edit `"1992 space movie "` on line 119 of server.js to change the name of the bot, make sure to add a space at the end so the bot number wont be part of your text
 
 # Using The Bot
 
