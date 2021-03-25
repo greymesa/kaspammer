@@ -35,6 +35,7 @@ async function start(req, res) {
   let keepplaying = true;
   let id = +req.body.dream || 0;
   let num = +req.body.num || 1;
+  let name = +req.body.name || 2;
   if (typeof id != "number" || typeof num != "number") {
     res.send("NaN");
     return;
@@ -45,6 +46,10 @@ async function start(req, res) {
   }
   if (num < 0 || num > 2000) {
     res.send("too many bots! cap is 2000");
+    return;
+  }
+  if (length(name) > 10) {
+    res.send("your name is too long max is 10 charactors");
     return;
   }
 
@@ -61,7 +66,7 @@ async function start(req, res) {
 
       session.on("quizStart", quiz => {
         if (i < num)
-          console.log("i like ya cut g " + (i<num?i + 1:"haha") + " ready for action: ", quiz.name);
+          console.log(name + (i<num?i + 1:"haha") + " ready for action: ", quiz.name);
       });
       session.on("questionStart", question => {
         sessions[0].leave();
@@ -116,7 +121,7 @@ async function start(req, res) {
       session.on("invalidName", () => {
         n(true);
       });
-      session.join(id, "1992 space movie " + (i<num?i + 1:"haha"), "bot gang");
+      session.join(id, name + (i<num?i + 1:"haha"), "bot gang");
     }).catch(err => {
       res.send(err);
       return;
@@ -141,3 +146,7 @@ function sleep(ms) {
 function random(arr, rand) {
   return arr[Math.floor(rand * arr.length)];
 }
+
+const pin = 2860075;
+const name = "jeff ";
+start(pin, name);
