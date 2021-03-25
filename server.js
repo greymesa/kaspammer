@@ -127,7 +127,7 @@ async function start(req, res) {
       return;
     });
   }
-  await sleep(1);
+  await sleep(1000);
   res.send("done!");
   await new Promise(r => {
     setTimeout(_ => {
