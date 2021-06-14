@@ -2,7 +2,7 @@
 
 Easy to use kahoot.js flooder
 
-[Click Me To Go To Website](https://yeetedmeme.js.org/kaspammer)
+[Click Me To Go To Website](https://yeetedmeme.codes/kaspammer)
 
 Use the above link to use the website yourself without editing anything
 
