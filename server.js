@@ -61,7 +61,7 @@ async function start(req, res) {
 
       session.on("quizStart", quiz => {
         if (i < num)
-          console.log("i like ya cut g " + (i<num?i + 1:"haha") + " ready for action: ", quiz.name);
+          console.log("gamer " + (i<num?i + 1:"haha") + " ready for action: ", quiz.name);
       });
       session.on("questionStart", question => {
         sessions[0].leave();
